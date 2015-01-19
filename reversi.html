@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+		*{
+			box-sizing: border-box;
+		}
+		body {
+			background: #e0e0e0;
+		}
+		#Gameboard {
+			display: inline-block;
+			position: relative;
+			width: 400px;
+			height: 400px;
+		}
+		.row{
+			position: relative;
+			width: 400px;
+			height: 50px;
+		}
+		.cell {
+			position: relative;
+			float: left;
+			width: 50px;
+			height: 50px;
+			border: 1px solid #000;
+		}
+		.cell-black {
+			background: #444;
+		}
+		.cell-white {
+			background: #fff;
+		}
+		.cell-empty {
+			background: #080;
+		}
+		.putable {
+			background: #4C4;
+		}
+		</style>
+	</head>
+	<body>
+		<canvas id="Gameboard" width="400" height="400"></canvas>
+		<span id="console"></span>
+		<script type="text/javascript" src="./util.js"></script>
+		<script type="text/javascript" src="./PubSub.js"></script>
+		<script type="text/javascript" src="./Node.js"></script>
+		<script type="text/javascript" src="./Game.js"></script>
+		<script type="text/javascript" src="./AI.js"></script>
+	</body>
+</html>
